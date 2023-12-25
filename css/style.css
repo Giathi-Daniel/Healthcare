@@ -1,0 +1,325 @@
+/* ====================================*\
+            GENERAL STYLING
+/*=====================================*/
+body {
+    font-family: "Open Sans", "sans-serif";
+    color: #44444444;
+}
+a {
+    color: #1977CC;
+    text-decoration: none;
+}
+a:hover {
+    color: #3291e6;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+
+/* ====================================*\
+            TOP BAR
+/*=====================================*/
+#topbar {
+    background: #fff;
+    block-size: 40px;
+    font-size: 14px;
+    transition: all .5s;
+    z-index: 996;
+}
+#topbar .topbar-scrolled {
+    inset-block-start: -40px;
+}
+#topbar .contact-info a {
+    line-height: 1;
+    columns: #444;
+    transition: .3s;
+}
+#topbar .contact-info a:hover {
+    color: #3fbbc0;
+}
+#topbar .contact-info i {
+    color: #3fbbc0;
+    padding-inline-end: 4px;
+    margin-inline-start: 15px;
+    line-height: 0;
+}
+#topbar .contact-info i:first-child {
+    margin-inline-start: 0;
+}
+#topbar .social-links a {
+    color: #437099;
+    padding-inline-start: 15px;
+    display: inline-block;
+    line-height: 1px;
+    transition: .3s;
+}
+#topbar .social-links a:hover {
+    color: #1977CC;
+}
+
+
+/* ====================================*\
+            HEADER SECTION
+/*=====================================*/
+#header {
+    background: #fff;
+    transition: all .5s;
+    z-index: 997;
+    padding: 15px 0;
+    inset-block-start: 40px;
+    box-shadow: 0px 2px 15px rgba(25, 119, 204, .1);
+}
+#header.header-scrolled {
+    inset-block-start: 0;
+}
+#header .logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-family: "Poppin", serif;
+}
+#header .logo a {
+    color: #2c4964;
+}
+#header .logo img {
+    max-block-size: 40px;
+}
+/* *********** navbar ************ */
+.navbar {
+    padding: 0;
+}
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.navbar li {
+    position: relative;
+}
+.navbar > ul > li {
+    position: relative;
+    white-space: normal;
+    padding: 8px 0 8px 20px;
+}
+.navbar a, .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #2c4964;
+    white-space: nowrap;
+    transition: .3s;
+    border-block-end: 2px solid #fff;
+    padding: 5px 2px;
+}
+.navbar a i, .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-inline-start: 5px;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a{
+    color: #1977CC;
+    border-color: #1977CC;
+}
+/* *********** appointment ************ */
+.appointment-btn {
+    margin-inline-start: 25px;
+    background: #1977CC;
+    color: #fff;
+    border-radius: 50px;
+    padding: 8px 25px;
+    white-space: nowrap;
+    transition: .3s;
+    font-size: 14px;
+    display: inline-block;
+}
+.appointment-btn:hover {
+    background: #3fbbc0;
+    color: #fff;
+}
+@media (max-width: 768x) {
+    .appointment-btn {
+        margin: 0 15px 0 0;
+        padding: 6px 10px;
+    }
+}
+/* *********** MOBILE NAVIGATION ************ */
+.mobile-nav-toggle {
+    color: #2c4964;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: .5s;
+}
+.mobile-nav-toggle.bi-x {
+    color: #fff;
+}
+@media (max-width: 991px) {
+    .mobile-nav-toggle {
+        display: block;
+    }
+    .navbar ul {
+        display: none;
+    }
+}
+.navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inset-block-end: 0;
+    inset-inline-end: 0;
+    background: rgba(28, 47, 65, .9);
+    transition: .3s;
+    z-index: 999;
+}
+.navbar-mobile .mobile-nav-toggle {
+    position: absolute;
+    inset-block-start: 15px;
+    inset-inline-end: 15px;
+}
+.navbar-mobile ul {
+    display: block;
+    position: absolute;
+    inset-block-start: 55px;
+    inset-inline-end: 15px;
+    inset-block-end: 15px;
+    inset-inline-start: 15px;
+    padding: 10px 0;
+    background: #fff;
+    overflow-y: auto;
+    transition: .3s;
+}
+.navbar-mobile > ul > li {
+    padding: 0;
+}
+.navbar-mobile a {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #2c4964;
+    border: none;
+}
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+    color: #3fbbc0;
+}
+.navbar-mobile .getstarted {
+    margin: 15px;
+}
+
+
+/* ******* SECTIONS ******** */
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+.section-bg {
+    background-color: #f1f7fd;
+}
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-block-end: 20px;
+    padding-block-end: 20px;
+    position: relative;
+    color: #2c4964;
+}
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    inline-size: 120px;
+    block-size: 1px;
+    background: #ddd;
+    inset-block-end: 1px;
+    inset-inline-start: calc(50% - 60px);
+}
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    inline-size: 40px;
+    block-size: 3px;
+    background: #1977CC;
+    inset-block-end: 0;
+    inset-inline-start: calc(50% - 20px);
+}
+.section-title p {
+    margin-block-end: 0;
+}
+
+/* ====================================*\
+            HERO / HOME SECTION
+/*=====================================*/
+#home {
+    inline-size: 100%;
+    block-size: 90vh;
+    background: url("../images/home.jpg") top center;
+    background-size: cover;
+    background-position: center;
+}
+#home, .container {
+    position: relative;
+}
+#home h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #2c4964;
+}
+#home h2 {
+    color: #2c4964;
+    margin: 10px 0 0 0;
+    font-size: 24px;
+}
+#home .btn-get-started {
+    font-family: sans-serif, "Raleway";
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 35px;
+    margin-block-start: 30px;
+    border-radius: 50px;
+    border-radius: 50px;
+    transition: .5s;
+    color: #fff;
+    background: #1977CC;
+}
+#home .btn-get-started:hover {
+    background: #3fbbc0;
+}
+@media (max-width: 1024px) {
+    #home {
+        background-attachment: fixed;
+    }
+}
+@media (min-width: 992px) {
+    #home {
+        margin-block-end: 0;
+        block-size: 100vh;
+    }
+    #home .container {
+        padding-block-end: 63px;
+    }
+    #home h1 {
+        font-size: 28px;
+        line-height: 36px;
+        margin-block-end: 30px;
+    }
+}
+@media (max-width: 600px) {
+    #home {
+        block-size: 110vh;
+    }
+}
