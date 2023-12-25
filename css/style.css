@@ -323,3 +323,63 @@ section {
         block-size: 110vh;
     }
 }
+
+
+/* ====================================*\
+        FEATURED SERVICES SECTION
+/*=====================================*/
+.featured-services .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+    transition: all .3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+}
+.featured-services .icon-box::before {
+    content: "";
+    position: absolute;
+    background: #d9f1f2;
+    inset-inline-end: 0;
+    inset-inline-start: 0;
+    inset-block-end: 0;
+    inset-block-start: 100%;
+    transition: all .3s;
+    z-index: -1;
+}
+.featured-services .icon-box:hover::before {
+    background: #3fbbc0;
+    inset-block-start: 0;
+    border-radius: 0;
+}
+.featured-services .icon {
+    margin-block-end: 15px;
+}
+.featured-services .icon i {
+    font-size: 48px;
+    line-height: 1;
+    color: #1977CC;
+    transition: all .3s ease-in-out;
+}
+.featured-services .title {
+    font-weight: 700;
+    margin-block-end: 15px;
+    font-size: 18px;
+}
+.featured-services .title a {
+    color: #111;
+}
+.featured-services .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-block-end: 0;
+    color: #111;
+}
+.featured-services .icon-box:hover, .title a, .featured-services .icon-box:hover .description {
+    color: #fff;
+}
+.featured-services .icon-box:hover .icon i {
+    color: #fff;
+}
