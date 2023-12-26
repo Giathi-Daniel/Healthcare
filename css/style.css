@@ -525,3 +525,119 @@ section {
         opacity: 0; 
     }
 }
+
+
+/* ====================================*\
+             COUNTS SECTION
+/*=====================================*/
+.counts {
+    padding-block-end: 30px;
+}
+.counts .count-box {
+    box-shadow: -10px -5px 40px 0 rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    inline-size: 100%;
+}
+.counts  .count-box i {
+    display: block;
+    font-size: 30px;
+    color: #1977CC;
+    float: left;
+}
+.counts  .count-box span {
+    font-size: 42px;
+    line-height: 24px;
+    display: block;
+    font-weight: 700;
+    color: #555555;
+    margin-inline-start: 50px;
+}
+.counts  .count-box p {
+    padding: 30px 0 0;
+    margin: 0;
+    font-family: "Roboto", serif;
+    font-size: 14px;
+    color: #111;
+}
+.counts  .count-box a {
+    font-weight: 600;
+    display: block;
+    margin-block-start: 20px;
+    color: #7b7b7b;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    transition: ease-in-out .3s;
+}
+.counts  .count-box:hover {
+    color: #3291e6;
+}
+
+
+/* ====================================*\
+             SERVICES SECTION
+/*=====================================*/
+.services .icon-box {
+    text-align: center;
+    border: 1px solid #d5e1ed;
+    padding: 80px 20px;
+    transition: all ease-in-out .3s;
+}
+.services .icon-box .icon {
+    margin: 0 auto;
+    inline-size: 64px;
+    block-size: 64px;
+    background: #1977CC;
+    border-radius: 5px;
+    transition: all .3s  ease-out 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-end: 20px;
+    transform-style: preserve-3d;
+}
+.services .icon-box .icon i {
+    color: #fff;
+    font-size: 28px;
+}
+.services .icon-box  .icon::before {
+    position: absolute;
+    content: "";
+    inset-inline-start: -8px;
+    inset-block-start: -8px;
+    block-size: 100%;
+    inline-size: 100%;
+    background: #badaf7;
+    border-radius: 5px;
+    transition: all .3s ease-out 0s;
+    transform: translateZ(-1px);
+}
+.services .icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.services .icon-box h4 a {
+    color: #2c4964;
+}
+.services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-block-end: 0;
+    color: #111;
+}
+.services .icon-box:hover {
+    background: #3fbbc0;
+    background-color: #3fbbc0;
+}
+.services .icon-box:hover .icon {
+    background: #fff;
+}
+.services .icon-box:hover .icon i {
+    color: #1977CC;
+}
+.services .icon-box:hover .icon::before {
+    background: #3291e6;
+}
+.services .icon-box:hover h4 a, .services .icon-box:hover p {
+    color: #fff;
+}
