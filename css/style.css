@@ -815,6 +815,7 @@ section {
 }
 .contact .email-form textarea {
     padding: 10px 12px;
+    margin-block-end: 10px;
 }
 .contact .email-form button[type="submit"] {
     background: #1977CC;
